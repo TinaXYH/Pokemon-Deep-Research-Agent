@@ -2,3 +2,4 @@ echo ".DS_Store" >> .gitignore
 git add .gitignore
 git commit -m "chore: add .gitignore to exclude system files"
 git push.DS_Store
+pokemon-pokedex-frontend/node_modules/
