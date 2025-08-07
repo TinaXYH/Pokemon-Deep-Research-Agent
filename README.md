@@ -374,10 +374,10 @@ npm run dev
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    USER INTERFACE                           │
-│  ┌─────────────────┐    ┌─────────────────┐                │
-│  │  Web Frontend   │    │  CLI Interface  │                │
-│  │  (React + Vite) │    │  (Python CLI)   │                │
-│  └─────────────────┘    └─────────────────┘                │
+│  ┌─────────────────┐    ┌─────────────────┐                 │
+│  │  Web Frontend   │    │  CLI Interface  │                 │
+│  │  (React + Vite) │    │  (Python CLI)   │                 │
+│  └─────────────────┘    └─────────────────┘                 │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -386,8 +386,8 @@ npm run dev
 │  ┌─────────────────────────────────────────────────────────┐│
 │  │           Coordinator Agent                             ││
 │  │  • Query routing and workflow management                ││
-│  │  • Agent communication and synchronization             ││
-│  │  • Error handling and recovery                         ││
+│  │  • Agent communication and synchronization              ││
+│  │  • Error handling and recovery                          ││
 │  └─────────────────────────────────────────────────────────┘│
 └─────────────────────────────────────────────────────────────┘
                               │
@@ -395,42 +395,42 @@ npm run dev
 ┌─────────────────────────────────────────────────────────────┐
 │                  SPECIALIZED AGENTS                         │
 │                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   Query     │  │    Data     │  │  Analysis   │         │
-│  │  Analysis   │  │ Collection  │  │   Agent     │         │
-│  │   Agent     │  │   Agent     │  │             │         │
-│  │             │  │             │  │             │         │
-│  │ • Query     │  │ • PokéAPI   │  │ • Battle    │         │
-│  │   parsing   │  │   data      │  │   strategy  │         │
-│  │ • Intent    │  │ • Caching   │  │ • Meta      │         │
-│  │   detection │  │ • Validation│  │   analysis  │         │
-│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐          │
+│  │   Query     │  │    Data     │  │  Analysis   │          │
+│  │  Analysis   │  │ Collection  │  │   Agent     │          │ 
+│  │   Agent     │  │   Agent     │  │             │          │ 
+│  │             │  │             │  │             │          │
+│  │ • Query     │  │ • PokéAPI   │  │ • Battle    │          │
+│  │   parsing   │  │   data      │  │   strategy  │          │
+│  │ • Intent    │  │ • Caching   │  │ • Meta      │          │
+│  │   detection │  │ • Validation│  │   analysis  │          │
+│  └─────────────┘  └─────────────┘  └─────────────┘          │
 │                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   Report    │  │ Conversation│  │Specification│         │
-│  │ Generation  │  │   Memory    │  │Confirmation │         │
-│  │   Agent     │  │   Manager   │  │   System    │         │
-│  │             │  │             │  │             │         │
-│  │ • Report    │  │ • Context   │  │ • Query     │         │
-│  │   synthesis │  │   tracking  │  │   disambig. │         │
-│  │ • Formatting│  │ • Session   │  │ • Parameter │         │
-│  │ • Quality   │  │   persist.  │  │   validation│         │
-│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐          │
+│  │   Report    │  │ Conversation│  │Specification│          │
+│  │ Generation  │  │   Memory    │  │Confirmation │          │
+│  │   Agent     │  │   Manager   │  │   System    │          │
+│  │             │  │             │  │             │          │
+│  │ • Report    │  │ • Context   │  │ • Query     │          │
+│  │   synthesis │  │   tracking  │  │   disambig. │          │
+│  │ • Formatting│  │ • Session   │  │ • Parameter │          │
+│  │ • Quality   │  │   persist.  │  │   validation│          │
+│  └─────────────┘  └─────────────┘  └─────────────┘          │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                   INTEGRATION LAYER                         │
 │                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
-│  │   OpenAI    │  │   PokéAPI   │  │   Vector    │         │
-│  │ GPT-4 API   │  │Integration  │  │   Memory    │         │
-│  │             │  │             │  │   System    │         │
-│  │ • Analysis  │  │ • Pokemon   │  │ • Context   │         │
-│  │ • Generation│  │   data      │  │   storage   │         │
-│  │ • Reasoning │  │ • Real-time │  │ • Semantic  │         │
-│  │             │  │   updates   │  │   search    │         │
-│  └─────────────┘  └─────────────┘  └─────────────┘         │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐          │
+│  │   OpenAI    │  │   PokéAPI   │  │   Vector    │          │
+│  │ GPT-4 API   │  │Integration  │  │   Memory    │          │
+│  │             │  │             │  │   System    │          │
+│  │ • Analysis  │  │ • Pokemon   │  │ • Context   │          │
+│  │ • Generation│  │   data      │  │   storage   │          │
+│  │ • Reasoning │  │ • Real-time │  │ • Semantic  │          │
+│  │             │  │   updates   │  │   search    │          │
+│  └─────────────┘  └─────────────┘  └─────────────┘          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
