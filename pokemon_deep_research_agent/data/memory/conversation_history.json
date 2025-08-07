@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2025-08-06T19:49:42.573983",
+    "user_query": "Tell me about Pikachu",
+    "agent_response": "Pikachu is an Electric-type Pokemon known for its speed and special attack...",
+    "metadata": {
+      "satisfaction": "high",
+      "query_type": "individual_analysis"
+    }
+  },
+  {
+    "timestamp": "2025-08-06T19:49:42.573983",
+    "user_query": "Tell me about Pikachu",
+    "agent_response": "Pikachu is an Electric-type Pokemon known for its speed and special attack...",
+    "metadata": {
+      "satisfaction": "high",
+      "query_type": "individual_analysis"
+    }
+  }
+]

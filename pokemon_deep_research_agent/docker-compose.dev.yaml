@@ -1,0 +1,39 @@
+services:
+  pokemon-agent:
+    container_name: pokemon-deep-research-agent
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    command: tail -f /dev/null
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+        consistency: cached
+      - type: volume
+        source: cache_data
+        target: /app/data/cache
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app/src
+      - ENVIRONMENT=development
+    ports:
+      - "8000:8000"  # For potential web interface
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    networks:
+      - pokemon-network
+
+volumes:
+  cache_data:
+    driver: local
+
+networks:
+  pokemon-network:
+    driver: bridge
+

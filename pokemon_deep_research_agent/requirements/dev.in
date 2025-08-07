@@ -1,0 +1,38 @@
+# Development dependencies for Pokemon Deep Research Agent
+# Use pip-tools to compile: pip-compile requirements/dev.in
+
+# Core dependencies (from requirements.txt)
+-r ../requirements.txt
+
+# Development tools
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
+# Code quality
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Development utilities
+ipython>=8.14.0
+ipdb>=0.13.13
+python-dotenv>=1.0.0
+
+# Documentation
+sphinx>=7.1.0
+sphinx-rtd-theme>=1.3.0
+
+# Testing utilities
+httpx>=0.24.0  # For async HTTP testing
+aioresponses>=0.7.4  # For mocking aiohttp responses
+
+# Performance profiling
+memory-profiler>=0.61.0
+line-profiler>=4.1.0
+
+# Docker development
+docker-compose>=1.29.0
+
